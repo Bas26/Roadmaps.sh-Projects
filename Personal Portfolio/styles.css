@@ -1,7 +1,11 @@
 /* =========================================
 1. VARIABLES & RESET
 ========================================= */
-
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 /* =========================================
 2. BASE STYLES (Raw Tags)
 ========================================= */
@@ -10,8 +14,14 @@ ul {
   padding: 0;
 }
 
-h1 h3 {
+body {
+  margin: 0;
+}
+
+h1,
+h3 {
   /* add google fonts here later */
+  text-align: center;
 }
 
 /* =========================================
@@ -44,9 +54,31 @@ header {
   flex-direction: column;
 }
 
+.showcase-columns h3 {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  margin: 0px;
+}
+
+.project-list ul li {
+  text-align: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-color: black;
+  border-bottom: 2px solid;
+}
+
+.project-list ul li:last-child {
+  border-bottom: none;
+}
+
 /* =========================================
 4. UTILITY CLASSES (Global Helpers)
 ========================================= */
 .text-center {
   text-align: center;
 }
+
+/* =========================================
+5. MEDIA QUERIES
+========================================= */
