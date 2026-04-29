@@ -1,12 +1,52 @@
-body {
+/* =========================================
+1. VARIABLES & RESET
+========================================= */
+
+/* =========================================
+2. BASE STYLES (Raw Tags)
+========================================= */
+ul {
+  list-style: none;
+  padding: 0;
 }
 
+h1 h3 {
+  /* add google fonts here later */
+}
+
+/* =========================================
+3. COMPONENTS & LAYOUT (Top to Bottom)
+========================================= */
 header {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  margin: 0;
+}
+
+.nav-links li::after {
+  content: "/";
+  margin-left: 10px;
+}
+
+.nav-links :last-child::after {
+  content: "";
+}
+
+.showcase-columns {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================
+4. UTILITY CLASSES (Global Helpers)
+========================================= */
 .text-center {
   text-align: center;
 }
