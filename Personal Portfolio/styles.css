@@ -72,6 +72,22 @@ header {
   border-bottom: none;
 }
 
+.teacher-review {
+  border-top: 3px solid;
+  padding: 10px;
+}
+
+.review {
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.teacher-columns .review:first-child {
+  margin-top: 0px;
+}
+
 /* =========================================
 4. UTILITY CLASSES (Global Helpers)
 ========================================= */
