@@ -24,6 +24,9 @@ h3 {
   text-align: center;
 }
 
+p {
+  /* text-align: justify; */
+}
 /* =========================================
 3. COMPONENTS & LAYOUT (Top to Bottom)
 ========================================= */
@@ -31,6 +34,8 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
+  padding: 15px 0px;
 }
 
 .nav-links {
@@ -49,6 +54,13 @@ header {
   content: "";
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 10px 15px;
+}
+
 .showcase-columns {
   display: flex;
   flex-direction: column;
@@ -58,6 +70,10 @@ header {
   border-top: 3px solid;
   border-bottom: 3px solid;
   margin: 0px;
+}
+
+.column h3 {
+  padding: 10px;
 }
 
 .project-list ul li {
@@ -70,6 +86,29 @@ header {
 
 .project-list ul li:last-child {
   border-bottom: none;
+}
+
+.work-experience-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px 10px 15px;
+  gap: 10px;
+}
+.work-experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 50px 10px 15px;
+}
+
+.education-list li::before {
+  content: "- ";
 }
 
 .teacher-review {
@@ -86,6 +125,10 @@ header {
 
 .teacher-columns .review:first-child {
   margin-top: 0px;
+}
+
+footer {
+  padding: 28px;
 }
 
 /* =========================================
