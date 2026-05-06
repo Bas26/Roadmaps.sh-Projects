@@ -1,6 +1,9 @@
 /* =========================================
 1. VARIABLES & RESET
 ========================================= */
+:root {
+  --text-color: rgb(241, 231, 231);
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -10,6 +13,7 @@
 2. BASE STYLES (Raw Tags)
 ========================================= */
 body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -24,9 +28,6 @@ h3 {
   text-align: center;
 }
 
-p {
-  /* text-align: justify; */
-}
 /* =========================================
 3. COMPONENTS & LAYOUT (Top to Bottom)
 ========================================= */
@@ -35,7 +36,7 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  padding: 15px 0px;
+  padding: 15px;
 }
 
 .nav-links {
@@ -69,10 +70,6 @@ header {
 .showcase-columns h3 {
   border-top: 3px solid;
   border-bottom: 3px solid;
-  margin: 0px;
-}
-
-.column h3 {
   padding: 10px;
 }
 
@@ -81,7 +78,7 @@ header {
   padding: 10px 0px;
   cursor: pointer;
   border-color: black;
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
 }
 
 .project-list ul li:last-child {
@@ -91,13 +88,12 @@ header {
 .work-experience-list {
   display: flex;
   flex-direction: column;
-  padding: 10px 50px 10px 15px;
-  gap: 10px;
+  padding: 10px 0px;
 }
 .work-experience-item {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  padding: 15px;
 }
 
 .education-section {
@@ -113,7 +109,7 @@ header {
 
 .teacher-review {
   border-top: 3px solid;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .review {
@@ -121,10 +117,6 @@ header {
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
-}
-
-.teacher-columns .review:first-child {
-  margin-top: 0px;
 }
 
 footer {
@@ -141,3 +133,76 @@ footer {
 /* =========================================
 5. MEDIA QUERIES
 ========================================= */
+@media (min-width: 768px) {
+  h3 {
+    text-align: left;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    margin-left: auto;
+  }
+
+  .intro {
+    padding: 100px 0px;
+  }
+
+  .showcase-columns {
+    flex-direction: row;
+    border-top: 3px solid;
+  }
+
+  .showcase-columns h3 {
+    border: 0px;
+    padding: 15px 30px;
+  }
+
+  .column {
+    border-right: 3px solid;
+    flex: 1;
+  }
+
+  .column:first-child {
+    flex: 0.5;
+  }
+
+  .column:last-child {
+    border: 0px;
+  }
+
+  .project-list ul li {
+    text-align: left;
+    padding: 10px 30px;
+  }
+  .work-experience-list {
+    padding: 0px;
+  }
+
+  .work-experience-item {
+    border-bottom: 3px solid;
+    padding: 15px 30px;
+  }
+
+  .work-experience-item:last-child {
+    border-bottom: 0px;
+  }
+  .education-section {
+    padding: 15px 30px;
+  }
+
+  .teacher-review {
+    padding: 40px 30px;
+  }
+
+  .teacher-columns {
+    display: flex;
+    align-items: center;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+}
