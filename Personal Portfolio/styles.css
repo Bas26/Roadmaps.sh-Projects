@@ -29,7 +29,7 @@ h3 {
 }
 
 /* =========================================
-3. COMPONENTS & LAYOUT (Top to Bottom)
+3. GLOBAL STYLES (Body, Typography, etc.)
 ========================================= */
 header {
   display: flex;
@@ -38,6 +38,10 @@ header {
   gap: 10px;
   padding: 15px;
 }
+
+/* =========================================
+4. PAGE LAYOUTS (The Blueprints)
+========================================= */
 
 .nav-links {
   display: flex;
@@ -124,14 +128,14 @@ footer {
 }
 
 /* =========================================
-4. UTILITY CLASSES (Global Helpers)
+5. UTILITY CLASSES (Global Helpers)
 ========================================= */
 .text-center {
   text-align: center;
 }
 
 /* =========================================
-5. MEDIA QUERIES
+6. MEDIA QUERIES
 ========================================= */
 @media (min-width: 768px) {
   h3 {
